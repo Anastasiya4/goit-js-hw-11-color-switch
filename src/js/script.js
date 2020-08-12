@@ -28,7 +28,7 @@ let timeId = null;
   function backgroundColorChanger () {
   timeId = setInterval(() => {
     refs.btnStart.setAttribute('disabled', 'disabled');
-    refs.body.setAttribute('background-color', colors[randomIntegerFromInterval(0, colors.length)]);
+    refs.body.setAttribute('style',`background-color: ${colors[randomIntegerFromInterval(0, colors.length)]}`,);
   }, 1000);
   }
 
